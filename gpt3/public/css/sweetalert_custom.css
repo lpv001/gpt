@@ -1,0 +1,13 @@
+.swal2-content {
+    padding: 1rem !important;
+    text-align: start !important;
+}
+
+.swal2-actions {
+    display: flex;
+    justify-content: end !important;
+    margin: 0 !important;
+}
+.swal2-styled.swal2-confirm {
+    font-size: 0.9rem !important;
+}

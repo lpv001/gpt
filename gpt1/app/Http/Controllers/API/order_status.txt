@@ -1,0 +1,7 @@
+{
+    0 => initiate
+    1 => pending
+    2 => dilivery
+    3 => completed
+    4 => cancelled
+}

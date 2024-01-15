@@ -1,0 +1,29 @@
+networks:
+  babeq:
+  db-shared:
+    driver: bridge
+  gpt3_app-shared:
+    external: true
+
+services:
+  mysql_db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gpt_db
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d"
+    ports:
+      - 3306:3306
+    networks:
+      - babeq
+      - gpt3_app-shared
+      - db-shared
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+      - babeq

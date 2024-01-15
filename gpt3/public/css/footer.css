@@ -1,0 +1,35 @@
+.bottom-navigation-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    height: 8%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 779px) {
+    .bottom-navigation-bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bottom-navigation-bar {
+        height: 14%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-bottom > span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-bottom > span {
+        font-size: 13px;
+    }
+}

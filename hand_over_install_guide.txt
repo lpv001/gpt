@@ -1,0 +1,29 @@
+Install database on mysql
+gpt_db.sql
+
+Install GPT Source code gpt1
+(1). unzip source code
+(2). sudo composer install
+(3). sudo chgrp -R www-data:www-data storage bootstrap/cache
+(4). sudo chmod -R ug+rwx storage bootstrap/cache
+(5). sudo cp .env.example .env
+(6). sudo php artisan key:generate
+(7). sudo php artisan passport:install
+(8). Copy content of .env except APP_KEY
+
+Install GPT Source code gpt3
+(1). unzip source code
+(2). sudo composer install
+(3). sudo chgrp -R www-data:www-data storage bootstrap/cache
+(4). sudo chmod -R ug+rwx storage bootstrap/cache
+(5). sudo cp .env.example .env
+(6). sudo php artisan key:generate
+(7). Copy content of .env except APP_KEY
+
+For .env file
+(1). Modify the APP_URL, PUB_URL and API_URL
+(2). for admin gpt3, modify DOMAIN_ADMIN
+
+Check status
+(1). docker-compose exec -d gpt1 crond -f
+(2). docker-compose exec gpt1 ps aux

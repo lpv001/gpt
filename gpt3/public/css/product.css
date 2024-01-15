@@ -1,0 +1,7 @@
+.product-card {
+    height: 232px;
+    width: 169px !important;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
