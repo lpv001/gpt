@@ -27,3 +27,7 @@ For .env file
 Check status
 (1). docker-compose exec -d gpt1 crond -f
 (2). docker-compose exec gpt1 ps aux
+
+Build
+(1). docker-compose build --no-cache --force-rm
+(2). docker exec -it <container_name_or_id> /bin/bash

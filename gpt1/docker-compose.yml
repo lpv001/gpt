@@ -1,3 +1,5 @@
+version: '3'
+
 networks:
   babeq:
   gpt3_app-shared:
